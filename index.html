@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Sebuah halaman kecil untuk merayakan perjalanan baru Aisya Tiara.">
+
+  <title>A Special Day | Birthday</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND DECORATION -->
+  <div class="background-decoration"></div>
+  
+  <!-- DEKORASI KUPU-KUPU DAN BUNGA TULIP -->
+  <div class="floating-decorations" aria-hidden="true">
+
+    <!-- Kupu-kupu -->
+    <span class="decor-icon butterfly butterfly-one">🦋</span>
+    <span class="decor-icon butterfly butterfly-two">🦋</span>
+    <span class="decor-icon butterfly butterfly-three">🦋</span>
+
+    <!-- Bunga tulip -->
+    <span class="decor-icon tulip tulip-one">🌷</span>
+    <span class="decor-icon tulip tulip-two">🌷</span>
+    <span class="decor-icon tulip tulip-three">🌷</span>
+
+  </div>
+
+  <!-- ================================= -->
+  <!-- HEADER -->
+  <!-- ================================= -->
+
+  <header class="header">
+
+    <div class="brand">
+
+      <span class="brand-symbol">✳</span>
+
+      <div class="brand-copy">
+
+        <p class="brand-kicker">
+          THE BIRTHDAY JOURNAL
+        </p>
+
+        <h2 class="brand-name">
+          UNTUK AISYA TIARA
+        </h2>
+
+        <p class="brand-caption">
+          Sebuah halaman kecil untuk merayakan ceritamu.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="header-actions">
+
+      <button type="button" class="theme-button" id="themeButton" aria-label="Ubah tema">
+
+        <span id="themeIcon">☀</span>
+
+        <span id="themeText">Tema terang</span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================================= -->
+  <!-- MAIN CONTENT -->
+  <!-- ================================= -->
+
+  <main>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 0 : INTRO / WELCOME -->
+    <!-- ================================= -->
+
+    <section class="page active" id="page0">
+
+      <div class="welcome-container">
+
+        <span class="welcome-symbol">✳</span>
+
+        <p class="eyebrow">
+          3 NOVEMBER 2026 · HARI ISTIMEWA
+        </p>
+
+
+        <!-- PENANDA USIA -->
+
+        <div class="welcome-age">
+
+          <span class="welcome-age-number">20</span>
+
+          <div class="welcome-age-copy">
+
+            <strong>TAHUN</strong>
+
+            <span>PERJALANAN BARU DIMULAI</span>
+
+          </div>
+
+        </div>
+
+
+        <h1>
+          Ada pesan<br>
+          <span>untukmu.</span>
+        </h1>
+
+
+        <p class="welcome-description">
+          Dua puluh tahun perjalanan telah membawa
+          banyak cerita. Dan masih ada begitu banyak
+          hal baik yang menunggu di depan.
+        </p>
+
+
+        <div class="welcome-recipient">
+          DIBUAT KHUSUS UNTUK AISYA TIARA
+        </div>
+
+
+        <button type="button" class="primary-button" id="startButton">
+
+          Buka Kejutan
+
+          <span>→</span>
+
+        </button>
+
+
+        <p class="welcome-hint">
+          Tekan tombol untuk melanjutkan
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 1 : BIRTHDAY COVER -->
+    <!-- ================================= -->
+
+    <section class="page" id="page1">
+
+      <div class="hero-container">
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            SEBUAH PERAYAAN KECIL UNTUKMU
+          </p>
+
+
+          <h1>
+            Happy<br>
+            <span>Birthday.</span>
+          </h1>
+
+
+          <p class="hero-description">
+            Perjalanan baru dimulai, satu tahun lagi
+            untuk bertumbuh, menemukan hal-hal baru,
+            dan menciptakan lebih banyak kenangan indah.
+          </p>
+
+
+          <div class="hero-name">
+
+            <span>MERAYAKAN 20 TAHUN PERJALANANMU</span>
+
+            <h2>Aisya Tiara</h2>
+
+          </div>
+
+
+          <div class="short-quote">
+            "Teruslah tumbuh menjadi seseorang yang
+            bisa kamu banggakan."
+          </div>
+
+
+          <button type="button" class="primary-button" id="nextButton">
+
+            Lihat Kejutanmu
+
+            <span>→</span>
+
+          </button>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- SLIDESHOW FOTO KENANGAN -->
+        <!-- ================================= -->
+
+        <div class="hero-image-container slideshow-container">
+
+
+          <!-- LABEL SLIDESHOW -->
+
+          <div class="image-label">
+
+            <span>SEBUAH MOMEN UNTUK DIKENANG</span>
+
+            <span id="slideCounter">01 / 19</span>
+
+          </div>
+
+
+          <!-- FOTO SLIDESHOW -->
+
+          <div class="hero-image-wrapper slideshow-wrapper">
+
+            <img id="memorySlideImage" src="assets/images/foto-1.jpg" alt="Foto kenangan Aisya" class="hero-image"
+              draggable="false">
+
+
+            <div class="image-overlay">
+
+              <span id="memorySlideCaption">
+                3 November 2026 - A SPECIAL DAY
+              </span>
+
+            </div>
+
+
+            <!-- TOMBOL SEBELUMNYA -->
+
+            <button type="button" class="slide-control slide-prev" id="prevMemoryButton" aria-label="Foto sebelumnya">
+
+              &#10094;
+
+            </button>
+
+
+            <!-- TOMBOL BERIKUTNYA -->
+
+            <button type="button" class="slide-control slide-next" id="nextMemoryButton" aria-label="Foto berikutnya">
+
+              &#10095;
+
+            </button>
+
+          </div>
+
+
+          <!-- CAPTION -->
+
+          <div class="image-caption">
+
+            <span>
+              Setiap foto memiliki cerita dan kenangannya sendiri.
+            </span>
+
+            <span>✳</span>
+
+          </div>
+
+
+          <!-- PROGRESS BAR -->
+
+          <div class="slide-progress">
+
+            <div class="slide-progress-fill" id="slideProgressFill">
+            </div>
+
+          </div>
+
+
+          <p class="slide-hint">
+            Foto berganti otomatis setiap 3 detik.
+            Kamu juga bisa menggeser atau menggunakan
+            tombol untuk menjelajahi kenangan.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER HALAMAN 1 -->
+
+      <div class="page-footer">
+
+        <span>
+          Semoga kau berhasil melewati setiap perjalanan
+          hidup dan meraih segala hal yang selama ini kau impikan.
+        </span>
+
+        <span>01 — 02</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- HALAMAN 2 : LONG QUOTE -->
+    <!-- ================================= -->
+
+    <section class="page" id="page2">
+
+      <div class="second-page-container">
+
+
+        <!-- HEADING -->
+
+        <div class="second-page-heading">
+
+          <p class="eyebrow">
+            CATATAN UNTUK PERJALANAN BARUMU
+          </p>
+
+          <h2>
+            A little reminder,
+            <span>just for you.</span>
+          </h2>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- QUOTE PANJANG -->
+        <!-- ================================= -->
+
+        <div class="quote-container">
+
+          <div class="quote-symbol">“</div>
+
+
+          <div class="quote-content">
+
+            <p>
+              Selamat memasuki usia 20 tahun.
+
+              Dua puluh tahun telah menjadi bagian
+              dari perjalananmu di bumi yang tidak
+              selalu ramah ini.
+
+              Ada banyak hal yang telah kamu lewati,
+              pelajari, dan tumbuhkan hingga sampai
+              di titik ini.
+            </p>
+
+
+            <p>
+              Semoga di usia yang baru ini, kamu
+              semakin mengenal dirimu sendiri,
+              semakin berani mencoba hal-hal baru,
+              dan tidak terlalu keras kepada dirimu
+              sendiri ketika sesuatu tidak berjalan
+              sesuai harapan.
+            </p>
+
+
+            <p>
+              Tidak semua hal harus selesai hari ini.
+
+              Tidak semua impian harus tercapai
+              dalam waktu yang bersamaan.
+
+              Ada perjalanan yang memang membutuhkan
+              waktu, dan tidak apa-apa untuk tumbuh
+              dengan kecepatanmu sendiri.
+            </p>
+
+
+            <p>
+              Semoga ada lebih banyak alasan untuk
+              tertawa, lebih banyak kesempatan untuk
+              berkembang, lebih banyak tempat yang
+              bisa kamu kunjungi, dan lebih banyak
+              hal baik yang datang dalam perjalananmu.
+            </p>
+
+
+            <p>
+              Di saat hari-harimu terasa panjang
+              dan berat, membosankan dan sepi, atau
+              ketika kamu merasa tidak ada yang
+              mengerti, ingatlah bahwa kamu tidak sendiri.
+
+              Jika merasa lelah, tidak apa-apa untuk
+              beristirahat sejenak.
+
+              Kamu tidak harus selalu kuat atau
+              menjadi orang yang paling berani.
+
+              Kamu hanya perlu menjadi dirimu sendiri,
+              dan itu sudah lebih dari cukup.
+            </p>
+
+
+            <p>
+              Ingatlah bahwa waktu ini akan berlalu.
+
+              Hal-hal yang hari ini terasa berat
+              tidak akan selamanya menetap.
+
+              Akan ada hari-hari baru, pengalaman
+              baru, dan kesempatan untuk menemukan
+              kebahagiaan dalam hal-hal sederhana.
+
+              Teruslah melangkah, meski perlahan,
+              sebab setiap perjalanan punya waktunya sendiri.
+            </p>
+
+
+            <p>
+              Sesekali, pilihlah dirimu sendiri.
+
+              Tidak semua hal harus kamu perjuangkan,
+              tidak semua orang harus kamu bahagiakan.
+
+              Sebab, kamu pun layak mendapatkan
+              perhatian, ketenangan, dan kebahagiaan
+              yang selama ini mungkin terlalu sering
+              kamu sisihkan.
+            </p>
+
+
+            <p class="quote-ending">
+              Teruslah bertumbuh, teruslah menjelajah,
+              dan jangan pernah berhenti menciptakan
+              kisahmu sendiri.
+            </p>
+
+          </div>
+
+
+          <div class="quote-author">
+            SEBUAH HARAPAN UNTUK PERJALANAN BARUMU
+            — 3 NOVEMBER 2026
+          </div>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- GALERI FOTO KENANGAN -->
+        <!-- ================================= -->
+
+        <div class="gallery-section">
+
+          <div class="gallery-heading">
+
+            <div>
+
+              <p class="eyebrow">
+                MEMORIES COLLECTION
+              </p>
+
+              <h3>Little Moments.</h3>
+
+            </div>
+
+            <span>18 KENANGAN + 1 FOTO SPESIAL</span>
+
+          </div>
+
+
+          <div class="photo-gallery">
+
+
+            <!-- MEMORY 01 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-2.jpg" alt="Foto kenangan 1" loading="lazy" decoding="async">
+
+              <span>
+                02 Januari 2025 - MEMORY / 01
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 02 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-3.jpg" alt="Foto kenangan 2" loading="lazy" decoding="async">
+
+              <span>
+                24 September 2025 - MEMORY / 02
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 03 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-4.jpg" alt="Foto kenangan 3" loading="lazy" decoding="async">
+
+              <span>
+                05 Oktober 2025 - MEMORY / 03
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 04 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-5.jpg" alt="Foto kenangan 4" loading="lazy" decoding="async">
+
+              <span>
+                02 Desember 2025 - MEMORY / 04
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 05 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-6.jpg" alt="Foto kenangan 5" loading="lazy" decoding="async">
+
+              <span>
+                10 Desember 2025 - MEMORY / 05
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 06 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-7.jpg" alt="Foto kenangan 6" loading="lazy" decoding="async">
+
+              <span>
+                10 Desember 2025 - MEMORY / 06
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 07 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-8.jpg" alt="Foto kenangan 7" loading="lazy" decoding="async">
+
+              <span>
+                1 Desember 2025 - MEMORY / 07
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 08 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-9.jpg" alt="Foto kenangan 8" loading="lazy" decoding="async">
+
+              <span>
+                10 Februari 2026 - MEMORY / 08
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 09 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-10.jpg" alt="Foto kenangan 9" loading="lazy" decoding="async">
+
+              <span>
+                12 Maret 2026 - MEMORY / 09
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 10 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-11.jpg" alt="Foto kenangan 10" loading="lazy" decoding="async">
+
+              <span>
+                09 April 2026 - MEMORY / 10
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 11 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-12.jpg" alt="Foto kenangan 11" loading="lazy" decoding="async">
+
+              <span>
+                15 April 2026 - MEMORY / 11
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 12 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-13.jpg" alt="Foto kenangan 12" loading="lazy" decoding="async">
+
+              <span>
+                30 April 2026 - MEMORY / 12
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 13 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-14.jpg" alt="Foto kenangan 13" loading="lazy" decoding="async">
+
+              <span>
+                20 Juni 2026 - MEMORY / 13
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 14 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-15.jpg" alt="Foto kenangan 14" loading="lazy" decoding="async">
+
+              <span>
+                10 Agustus 2026 - MEMORY / 14
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 15 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-16.jpg" alt="Foto kenangan 15" loading="lazy" decoding="async">
+
+              <span>
+                25 Agustus 2026 - MEMORY / 15
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 16 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-17.jpg" alt="Foto kenangan 16" loading="lazy" decoding="async">
+
+              <span>
+                14 Oktober 2026 - MEMORY / 16
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 17 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-18.jpg" alt="Foto kenangan 17" loading="lazy" decoding="async">
+
+              <span>
+                27 Oktober 2026 - MEMORY / 17
+              </span>
+
+            </div>
+
+
+            <!-- MEMORY 18 -->
+
+            <div class="gallery-item">
+
+              <img src="assets/images/foto-19.jpg" alt="Foto kenangan 18" loading="lazy" decoding="async">
+
+              <span>
+                28 Oktober 2026 - MEMORY / 18
+              </span>
+
+            </div>
+
+
+            <!-- FOTO SPESIAL ULANG TAHUN KE-20 -->
+
+            <div class="gallery-item featured-memory">
+
+              <img src="assets/images/foto-1.jpg" alt="Foto spesial ulang tahun Aisya ke-20" loading="lazy"
+                decoding="async">
+
+              <span>
+                3 November 2026 — CHAPTER 20 · A SPECIAL DAY
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- DOA UNTUKMU -->
+        <!-- ================================= -->
+
+        <div class="dua-section">
+
+
+          <div class="dua-heading">
+
+            <p class="eyebrow">
+              SEBUAH DOA DAN HARAPAN
+            </p>
+
+            <h2>
+              Doa untuk
+              <span>perjalananmu.</span>
+            </h2>
+
+            <p>
+              Ada hal-hal baik yang mungkin tidak
+              selalu bisa kita berikan secara langsung,
+              tetapi selalu bisa kita harapkan
+              melalui sebuah doa.
+            </p>
+
+          </div>
+
+
+          <div class="dua-container">
+
+            <div class="dua-symbol">✳</div>
+
+
+            <div class="dua-arabic">
+              بَارَكَ اللَّهُ فِي عُمْرِكِ
+            </div>
+
+
+            <p class="dua-latin">
+              Bārakallāhu fī 'umriki.
+            </p>
+
+
+            <p class="dua-meaning">
+              Semoga Allah memberkahi umurmu.
+            </p>
+
+
+            <div class="dua-divider"></div>
+
+
+            <div class="dua-content">
+
+              <p>
+                Ya Allah, berkahilah umurnya,
+                jagalah kesehatannya, teguhkan imannya,
+                lapangkan rezekinya, dan mudahkan
+                setiap urusannya.
+              </p>
+
+
+              <p>
+                Bimbinglah setiap langkahnya menuju
+                hal-hal yang Engkau ridai.
+                Ampunilah kesalahan-kesalahannya,
+                kuatkanlah hatinya dalam menghadapi
+                setiap ujian, dan pertemukanlah ia
+                dengan banyak kebaikan dalam
+                perjalanan hidupnya.
+              </p>
+
+
+              <p>
+                Jadikanlah setiap waktu yang berlalu
+                sebagai kesempatan baginya untuk
+                menjadi pribadi yang lebih baik,
+                lebih dekat kepada-Mu, dan lebih
+                bermanfaat bagi sesama.
+              </p>
+
+
+              <p>
+                Karuniakanlah kepadanya kebahagiaan
+                yang tidak menjauhkannya dari-Mu,
+                serta akhir kehidupan yang baik.
+              </p>
+
+            </div>
+
+
+            <div class="dua-ending">
+              Aamiin ya Rabbal 'alamin.
+            </div>
+
+
+            <div class="dua-ornament">
+              <span>✳</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- PENUTUP -->
+        <!-- ================================= -->
+
+        <div class="closing-section">
+
+          <span class="closing-star">✳</span>
+
+          <h2>
+            Perjalanan baru dengan<br>
+            <span>pesonanya sendiri.</span>
+          </h2>
+
+
+          <p>
+            Semoga perjalanan baru ini dipenuhi
+            hal-hal baik. Nikmati hari istimewamu!
+          </p>
+
+
+          <button type="button" class="secondary-button" id="backButton">
+
+            ← Kembali ke Awal
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER HALAMAN 2 -->
+
+      <div class="page-footer">
+
+        <span>
+          Sampai di sini kejutan kecil untukmu,
+          setidaknya untuk kali ini.
+        </span>
+
+        <span>02 — 02</span>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================================= -->
+  <!-- MUSIC PLAYER -->
+  <!-- ================================= -->
+
+  <div class="music-player">
+
+    <div class="music-icon">
+      ♪
+    </div>
+
+
+    <div class="music-info">
+
+      <span>Lagu yang mengiringi momen ini</span>
+
+      <p>Sempurna</p>
+
+
+      <div class="music-time">
+
+        <span id="currentTime">00:00</span>
+
+        <span>/</span>
+
+        <span id="durationTime">00:00</span>
+
+      </div>
+
+    </div>
+
+
+    <button type="button" id="musicButton" class="music-button" aria-label="Putar musik">
+
+      ▶
+
+    </button>
+
+  </div>
+
+
+  <!-- ================================= -->
+  <!-- AUDIO -->
+  <!-- ================================= -->
+
+  <audio id="birthdayMusic" src="assets/songs/lagu.mp3" loop preload="auto">
+  </audio>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
